@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url(./Black-and-White-Background-Presentation-templates-SB02298.jpg);
+            background-size: contain;
+            background-position: center;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .main {
+            height: 90%;
+            width: 90%;
+        }
+
+        .section {
+            width: 100%;
+            height: 10%;
+            border-radius: 10px;
+        }
+
+        .section2 {
+            width: 100%;
+            height: 20%;
+            border-radius: 10px;
+            margin-bottom: 1%;
+        }
+
+        .section3 {
+            width: 100%;
+            flex: 1;
+        }
+
+        .part {
+            width: 50%;
+            height: 100%;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        .greenclear {
+            background: rgba(0, 236, 59, 0.5)
+        }
+
+        .whiteclear {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        img {
+            height: 100%;
+            margin-right: 2%;
+        }
+
+        .circle {
+            border-radius: 50%;
+            height: 50%;
+            background: rgba(0, 0, 0, .3);
+            padding: 1%;
+        }
+
+        .circle2 {
+            border-radius: 50%;
+            height: 10%;
+            width:2%;
+            background-color: blue;
+            padding: 1%;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            padding: 0;
+            margin-right: 1%;
+        }
+
+        .search {
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(./search.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            margin-left: 2%;
+            padding: 1%;
+            height: 50%;
+            opacity: .3;
+
+        }
+
+        svg {
+            height: 100%;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 30px;
+            padding: 1%;
+            margin: 2%;
+            border: none;
+        }
+
+        .grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(90, 1fr);
+            column-gap: 1px;
+            padding: 5px
+        }
+
+        .item {
+            height: 90%;
+            width: 5px;
+            border-radius: 20px;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: gold;
+        }
+
+        ::placeholder{
+            color: black;
+            font-weight: bolder;
+        }
+
+        @media(max-width:680px) {
+            .item {
+                width: 2px;
+            }
+        }
+    </style>
+</head>
+<body class="flex">
+    <div class="main">
+        <div class="section flex whiteclear">
+          <div class="part" style="display: flex;">
+            <img src="./cheese.png" alt="cheese">
+            <h2>Status Page</h2>
+          </div>
+          <div class="part flex" style="display: flex; justify-content: end;">
+            <div class="circle">
+                <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>brightness</title> <path d="M0 16q0 0.832 0.576 1.44t1.44 0.576h1.984q0.832 0 1.408-0.576t0.608-1.44-0.608-1.408-1.408-0.576h-1.984q-0.832 0-1.44 0.576t-0.576 1.408zM4.096 25.888q0 0.832 0.608 1.44t1.408 0.576 1.408-0.576l1.408-1.408q0.608-0.608 0.608-1.408t-0.608-1.408-1.408-0.608-1.408 0.608l-1.408 1.408q-0.608 0.576-0.608 1.376zM4.096 6.112q0 0.832 0.608 1.408l1.408 1.408q0.576 0.576 1.408 0.576t1.408-0.576 0.608-1.408-0.608-1.408l-1.408-1.408q-0.576-0.608-1.408-0.608t-1.408 0.608-0.608 1.408zM8 16q0 3.328 2.336 5.664t5.664 2.336 5.664-2.336 2.336-5.664-2.336-5.632-5.664-2.368-5.664 2.368-2.336 5.632zM12 16q0-1.632 1.184-2.816t2.816-1.184 2.816 1.184 1.184 2.816-1.184 2.848-2.816 1.152-2.816-1.152-1.184-2.848zM14.016 28v2.016q0 0.832 0.576 1.408t1.408 0.576 1.408-0.576 0.608-1.408v-2.016q0-0.832-0.608-1.408t-1.408-0.576-1.408 0.576-0.576 1.408zM14.016 4q0 0.832 0.576 1.44t1.408 0.576 1.408-0.576 0.608-1.44v-1.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v1.984zM22.496 24.512q0 0.8 0.576 1.408l1.408 1.408q0.576 0.576 1.408 0.576t1.44-0.576 0.576-1.44-0.576-1.376l-1.408-1.408q-0.608-0.608-1.44-0.608t-1.408 0.608-0.576 1.408zM22.496 7.52q0 0.832 0.576 1.408t1.408 0.576 1.44-0.576l1.408-1.408q0.576-0.576 0.576-1.408t-0.576-1.408-1.44-0.608-1.408 0.608l-1.408 1.408q-0.576 0.576-0.576 1.408zM26.016 16q0 0.832 0.576 1.44t1.408 0.576h2.016q0.8 0 1.408-0.576t0.576-1.44-0.576-1.408-1.408-0.576h-2.016q-0.832 0-1.408 0.576t-0.576 1.408z"></path> </g></svg>
+            </div>
+            <input class="search flex" type="text" placeholder="Tap '/' to search">
+          </div>
+        </div>
+        <div class="section flex greenclear" style="margin-bottom: 2%;">
+            <div class="part" style="display: flex;">
+              <h3>All Systems Operational</h3>
+            </div>
+            <div class="part flex" style="display: flex; justify-content: end;">
+              <p>Checked 115 sec ago (from SCL)</p>
+          </div>
+    </div>
+    <div class="section2 flex column whiteclear">
+          <div class="section3 flex">
+            <div class="part" style="display: flex; align-items: center;">
+                <div class="circle2"><p class="no-margin">i</p></div>
+                <p>Workers.cloudflare.com</p>
+            </div>
+            <div class="part" style="display: flex; align-items: center; justify-content: end;">
+                <button>Operational</button>
+            </div>
+          </div>
+          <div class="section3">
+            <div class="grid">
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item yellow">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item yellow">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item yellow">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+                <div class="item green">
+
+                </div>
+            </div>
+         </div>
+         <div class="section3 flex" style="padding-left: 5px; box-sizing: border-box;">
+            <div class="part" style="display: flex; align-items: center;">
+                <p style="color: gray;">90 days ago</p>
+            </div>
+            <div class="part" style="display: flex; align-items: center; justify-content: end;">
+                <p style="color: gray;">Today</p>
+            </div>
+          </div>
+    </div>
+    <div class="section2 flex column whiteclear">
+        <div class="section3 flex">
+          <div class="part" style="display: flex; align-items: center;">
+              <div class="circle2"><p class="no-margin">i</p></div>
+              <p>www.cloudflare.com</p>
+          </div>
+          <div class="part" style="display: flex; align-items: center; justify-content: end;">
+              <button>Operational</button>
+          </div>
+        </div>
+        <div class="section3">
+          <div class="grid">
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item yellow">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item yellow">
+
+              </div>
+              <div class="item yellow">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item yellow">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+          </div>
+       </div>
+       <div class="section3 flex" style="padding-left: 5px; box-sizing: border-box;">
+          <div class="part" style="display: flex; align-items: center;">
+              <p style="color: gray;">90 days ago</p>
+          </div>
+          <div class="part" style="display: flex; align-items: center; justify-content: end;">
+              <p style="color: gray;">Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="section2 flex column whiteclear">
+        <div class="section3 flex">
+          <div class="part" style="display: flex; align-items: center;">
+              <div class="circle2"><p class="no-margin">i</p></div>
+              <p>The Cloudflare Blog</p>
+          </div>
+          <div class="part" style="display: flex; align-items: center; justify-content: end;">
+              <button>Operational</button>
+          </div>
+        </div>
+        <div class="section3">
+          <div class="grid">
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item yellow">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+              <div class="item green">
+
+              </div>
+          </div>
+       </div>
+       <div class="section3 flex" style="padding-left: 5px; box-sizing: border-box;">
+          <div class="part" style="display: flex; align-items: center;">
+              <p style="color: gray;">90 days ago</p>
+          </div>
+          <div class="part" style="display: flex; align-items: center; justify-content: end;">
+              <p style="color: gray;">Today</p>
+          </div>
+        </div>
+        </div>
+        <div class="section whiteclear flex" >
+            <div class="part" style="display: flex; align-items: center; padding-bottom: 10px;">
+                <p style="padding: 5px;">Powered by</p>
+                <a style="text-decoration: none;" href="https://workers.cloudflare.com/">Cloudflare Workers</a>
+                <p>&</p>
+                <a style="padding-left: 5px; text-decoration: none;" href="https://flareact.com/">Flareact</a>
+            </div>
+            <div class="part" style="display: flex; justify-content: flex-end;">
+            <p style="color: rgb(4, 156, 190);">Get Your Status Page</p>
+            </div>
+  </div>
+</body>
+</html>
